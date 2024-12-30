@@ -11,7 +11,7 @@ const AdminLogin = () => {
       e.preventDefault();
   
       try {
-        const response = await fetch("http://localhost:5000/forestfactree/admin/login", {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/forestfactree/admin/login`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ userId, password }),

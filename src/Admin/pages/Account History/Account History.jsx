@@ -95,6 +95,7 @@ export default function AccountHistory() {
       row.BuyerName.toLowerCase().includes(searchQuery.toLowerCase()) ||
       row.ProductName.toLowerCase().includes(searchQuery.toLowerCase()) ||
       row.SellingPrice.toString().includes(searchQuery) ||
+      row.OrderDate.toString().includes(searchQuery) ||
       row.BuyerMobileNumber.toString().includes(searchQuery) ||
       row.BuyerEmail.toLowerCase().includes(searchQuery.toLowerCase()) ||
       row.ModeOfPayment.toLowerCase().includes(searchQuery.toLowerCase())

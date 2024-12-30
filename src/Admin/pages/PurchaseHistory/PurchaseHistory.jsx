@@ -141,6 +141,7 @@ export default function PurchaseHistory() {
       row.SellerName.toLowerCase().includes(searchQuery.toLowerCase()) ||
       row.ProductName.toLowerCase().includes(searchQuery.toLowerCase()) ||
       row.Price.toString().includes(searchQuery) ||
+      row.DateOfAdd.toString().includes(searchQuery) ||
       row.Category.toLowerCase().includes(searchQuery.toLowerCase()) ||
       row.Subcategory.toLowerCase().includes(searchQuery.toLowerCase())
     )

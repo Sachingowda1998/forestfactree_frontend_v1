@@ -88,6 +88,7 @@ export default function BuyerList() {
       row.Name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       row.Email.toLowerCase().includes(searchQuery.toLowerCase()) ||
       row.MobileNumber.toString().includes(searchQuery) ||
+      row.EnquiryDate.toString().includes(searchQuery) ||
       row.AlternateMobileNumber.toString().includes(searchQuery) ||
       row.MillAddress.toLowerCase().includes(searchQuery.toLowerCase()) ||
       row.GstNumber.toLowerCase().includes(searchQuery.toLowerCase()) ||

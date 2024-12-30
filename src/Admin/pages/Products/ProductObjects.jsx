@@ -91,6 +91,7 @@ const getAllProducts = async() => {
       row.ProductName.toLowerCase().includes(searchQuery.toLowerCase()) ||
       row.ShortDescription.toLowerCase().includes(searchQuery.toLowerCase()) ||
       row.Weight.toString().includes(searchQuery) ||
+      row.ProductAddedDate.toString().includes(searchQuery) ||
       row.LongDescription.toLowerCase().includes(searchQuery.toLowerCase()) ||
       row.Units.toLowerCase().includes(searchQuery.toLowerCase()) ||
       row.Category.toLowerCase().includes(searchQuery.toLowerCase()) ||

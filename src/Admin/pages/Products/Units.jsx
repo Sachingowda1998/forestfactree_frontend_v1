@@ -167,7 +167,7 @@ export default function Units() {
           <Grid item xs={12} sm={4} md={2}>
             <Button
             sx={{ backgroundColor: "blue", color: "white" }}
-            onClick={() => navigate("/addaunit")}
+            onClick={() => navigate("/admin/addaunit")}
           >
             Add Unit
             </Button>

@@ -29,7 +29,7 @@ const SellerEnquiry = () => {
       if (response.status === 201) {
         swal("Completed", "Product details sent successfully. Our team will contact you shortly", "success")
           .then(() => {
-            window.location.href = "/home";
+            window.location.href = "/";
           });
       }
     } catch (error) {

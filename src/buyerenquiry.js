@@ -27,7 +27,7 @@ const BuyerEnquiry = () => {
       if (response.status === 201) {
         swal("Request Sent", "Your request has been sent successfully. We will get back to you with an update", "success")
           .then(() => {
-            window.location.href = "/home";
+            window.location.href = "/";
           });
       }
     } catch (error) {

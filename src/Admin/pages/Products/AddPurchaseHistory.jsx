@@ -88,7 +88,7 @@ const PurchaseHistoryForm = () => {
 
     try {
       const response = await fetch(
-        `${process.env.REACT_APP_BACKEND_URL}forestfactree/purchase-history/add`,
+        `${process.env.REACT_APP_BACKEND_URL}/forestfactree/purchase-history/add`,
         {
           method: "POST",
           headers: {

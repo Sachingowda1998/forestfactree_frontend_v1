@@ -54,7 +54,7 @@ const AddSellerForm = () => {
           panNumber: "",
           additionalDetails: "",
         }); // Reset the form
-        navigate("/sellerlist")
+        navigate("/admin/sellerlist")
       } else {
         Swal.fire({
           title: "Error",

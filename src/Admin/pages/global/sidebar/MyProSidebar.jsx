@@ -229,7 +229,7 @@ const MyProSidebar = () => {
               setSelected={setSelected}
             />
             <Item
-              title="Contact Us Requests"
+              title="Contact Us"
               to="/admin/getintouch"
               icon={<ContactMailIcon />}
               selected={selected}
@@ -279,7 +279,7 @@ const MyProSidebar = () => {
               setSelected={setSelected}
             />
             <Item
-              title="Account Summary"
+              title="Summary"
               to="/admin/accounthistory"
               icon={<HistoryIcon />}
               selected={selected}

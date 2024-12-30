@@ -1,0 +1,483 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace !important;
+}
+
+.navbar-background{
+  background-color: #C2FFC7;
+}
+
+.brand-name{
+  font-family: Georgia, Times, "Times New Roman", serif !important;
+  color: #62825D !important;
+}
+
+/* Make carousel images responsive */
+.carousel-img {
+  object-fit: cover;   /* Ensures the image covers the entire container */
+  height: 60vh;         /* Sets the height to 60% of the viewport height */
+}
+
+@media (max-width: 768px) {
+  /* For smaller screens, you can adjust the height */
+  .carousel-img {
+    height: 50vh; /* 50% of the viewport height for tablets and smaller */
+  }
+}
+
+@media (max-width: 576px) {
+  /* For very small screens, like mobile phones */
+  .carousel-img {
+    height: 50vh; /* 40% of the viewport height for small screens */
+  }
+}
+
+
+/* Ensure the image container is responsive and has a consistent height */
+.img-container {
+  position: relative;
+  overflow: hidden;  /* Prevent image from overflowing */
+  height: 180px;     /* Set a fixed height for the images */
+}
+
+/* Make sure the image fills the container */
+.prod-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ensures the image covers the area without distortion */
+  transition: transform 0.3s ease; /* Smooth zoom transition */
+  /* border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important; */
+}
+
+/* Hover effect for slight zoom */
+.prod-img:hover img {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.seeallbtn {
+  /* border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important; */
+  /* background-color: #69492D !important; */
+  background-color: #cc6633 !important;
+  color: white !important;
+}
+
+/* .category-block{
+  background-color: rgb(142, 248, 186);
+} */
+
+/* Remove blue outline and border on accordion button click */
+.acc-btn:focus {
+  box-shadow: none !important; /* Removes the blue shadow */
+  outline: none !important;    /* Removes the blue outline */
+  border-color: transparent !important; /* Ensures no border color change */
+}
+
+.navbar2{
+  background-color: #3C552D;
+  /* background-color: #62825D; */
+}
+
+/* Make sure the image fills the container */
+.cat-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ensures the image covers the area without distortion */
+  transition: transform 0.3s ease; /* Smooth zoom transition */
+}
+
+/* Hover effect for slight zoom */
+.cat-img:hover img {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.searchbtn{
+  background-color: #9EDF9C !important;
+}
+
+.footer{
+  /* background-color: #c6f3aa; */
+  background-color: #9EDF9C;
+  
+}
+
+.web-sticky{
+   position: sticky;
+   top: 70px;
+   background-color: white;
+   z-index: 1000;
+}
+
+/* .farmer-inside{
+  background-color: #C2FFC7;
+  background-color: #c6f3aa;
+} */
+
+/* For Laptops */
+.upper-image {
+  height: 380px !important;
+  width: 600px !important;
+}
+
+.lower-image {
+  height: 70px !important;
+  width: 100px !important;
+}
+
+/* For Tablets (Screen width between 600px and 1024px) */
+@media (max-width: 1024px) and (min-width: 600px) {
+  .upper-image {
+    width: 650px !important;
+  }
+
+  .lower-image {
+    width: 200px !important; /* Adjust lower image size for tablets */
+  }
+}
+
+/* For Mobile Phones (Screen width below 600px) */
+@media (max-width: 599px) {
+  .upper-image {
+    height: 300px !important; /* Smaller height for mobile */
+  }
+
+  .lower-image {
+    height: 60px !important; /* Smaller lower image height for mobile */
+  }
+}
+
+.home-bg{
+  /* background-color: #89B76D; */
+  /* background-color: #C2FFC7; */
+  background-color: #b9b26c !important;
+}
+
+/* .home-div-bg{
+  background-color: #c6f3aa;
+} */
+
+.custom-btn {
+  /* background-color: #69492D !important; */
+  background-color: #cc6633 !important;
+  color: white !important;
+}
+
+/* Remove the up/down arrow icon in accordion button */
+/* .accordion-button::after { */
+  /* content: none;  */
+  /* Removes the default arrow icon */
+/* } */
+
+/* Set the background color of accordion header to light green */
+.accordion-header .accordion-button {
+  background-color: #cc6633 !important; /* Light green background */
+  border: none !important; /* Remove the default border */
+  /* color: #69492D !important;  */
+  color: white !important;
+  font-weight: medium !important;
+}
+
+/* Ensure the background color remains the same even when expanded */
+.accordion-button:not(.collapsed) {
+  background-color: #cc6633 !important; /* Light green */
+  /* color: #155724 !important;  */
+  color: white !important;
+  font-weight: medium !important;
+}
+
+.btn-outline-custom{
+  /* color: #69492D !important;  */
+  color: #cc6633 !important; /* Text color: Bootstrap's 'success' green */
+  background-color: transparent !important; /* Transparent background */
+  /* border-color: #69492D !important;  */
+  border-color: #cc6633 !important; /* Border color: Bootstrap's 'success' green */
+}
+
+.input-group-search {
+  width: 100%; 
+}
+
+/* For laptop devices */
+@media (min-width: 992px) {
+  .input-group-search {
+      width: 530px !important; 
+  }
+} 
+
+.about-div{
+  height: 48vh;
+}
+
+/* For Mobile Phones (Screen width below 600px) */
+@media (max-width: 599px) {
+  .about-div {
+    height: 40vh !important; /* Smaller height for mobile */
+  }
+}
+
+.about-img{
+  height: 350px !important;
+}
+
+.farmer-div{
+  background-color: #576d2c;
+  color: white;
+  border-radius: 30px;
+}
+
+.farmer-div {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px; /* Optional for rounded corners */
+}
+
+.farmer-div:hover {
+  transform: translateY(-20px); /* Slight lift effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds depth */
+}
+
+#initialCard,
+#newFormCard {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#initialCard.d-none,
+#newFormCard.d-none {
+  display: none;
+}
+
+.form-card-header{
+  background-color: #576d2c !important;
+  color: white !important;
+}
+
+.carousel-caption {
+  position: absolute !important; /* Ensure it stays on top of the image */
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important; /* Match the width of the carousel */
+  height: 100% !important; /* Full height of the carousel item */
+  text-align: center !important;
+  color: white !important; /* Optional: Adjust text color for better contrast */
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important; /* Center vertically */
+  align-items: center !important; /* Center horizontally */ 
+}
+
+.navdropdown{
+  background-color: #3C552D !important;
+  font-weight: medium !important;
+}
+
+/* Change text inside the dropdown menu to white and bold */
+.navdropdown .dropdown-item {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+/* Prevent text color and background from changing on hover */
+.navdropdown .dropdown-item:hover,
+.navdropdown .dropdown-item:focus {
+  color: white !important;
+  background-color: #3C552D !important;
+}
+
+.testimonial-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.testimonial-card .avatar {
+  width: 110px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+.cat-img{
+  position: relative !important;
+  overflow: hidden !important;
+  background-color: black !important;
+}
+
+.cat-img img {
+  transition: transform 0.3s ease !important;
+  
+}
+
+.cat-img:hover img {
+  transform: scale(1.1) !important; /* Zoom effect */
+  opacity: 0.5 !important; /* Decrease opacity */
+  
+}
+
+.prod-img{
+  position: relative !important;
+  overflow: hidden !important;
+  background-color: black !important;
+}
+
+.prod-img img {
+  transition: transform 0.3s ease !important;
+  
+}
+
+.prod-img:hover img {
+  transform: scale(1.1) !important; /* Zoom effect */
+  opacity: 0.5 !important; /* Decrease opacity */
+  
+}
+
+.explore-button {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  background-color: #8B4513 !important; /* Brown background */
+  color: #fff !important; /* White text */
+  font-size: 1rem !important; /* Medium text */
+  padding: 10px 20px !important;
+  border: none !important;
+  border-radius: 5px !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+  cursor: pointer !important;
+  text-decoration: none !important; /* For Link */
+}
+
+.cat-img:hover .explore-button {
+  opacity: 1 !important; /* Show the button on hover */
+}
+
+.prod-img:hover .explore-button {
+  opacity: 1 !important; /* Show the button on hover */
+}
+
+.whatsapp-icon{
+  position: fixed;
+  right: 30px;
+  bottom: 90px;
+  z-index: 1001; 
+}
+
+.up-arrow-button{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 1001; 
+}
+
+.breadcrumb li a {
+  color: white !important;
+}
+
+.breadcrumb-item{
+  color: white !important;
+}
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+
+
+
+
+
+.bg-overlay {
+  background-image: url('/public/carousel1.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100%;
+  position: relative;
+}
+
+.bg-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity */
+  z-index: 1;
+}
+
+.bg-overlay > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+
+
+.aboutusblock {
+  /* background-image: url('/public/carousel2.jpg'); Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.aboutusblock::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity here */
+  z-index: 1;
+}
+
+.aboutusblock h2,
+.aboutusblock h5 {
+  position: relative;
+  z-index: 2;
+  opacity: 1; /* Ensures text appears above the overlay */
+}
+
+/* .pb-2, .pb-1, .pb-3, .pb-4, .pb-5, .mb-1, .mb-2, .mb-3, .mb-4, .mb-5,.pt-2, .pt-1, .pt-3, .pt-4, .pt-5, .mt-1, .mt-2, .mt-3, .mt-4, .mt-5{
+  border: none !important;
+  box-shadow: none !important;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

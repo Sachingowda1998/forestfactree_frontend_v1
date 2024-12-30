@@ -35,7 +35,7 @@ const AddSubcategory = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('${process.env.REACT_APP_BACKEND_URL}/forestfactree/subcategories/add', {
+    const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/forestfactree/subcategories/add`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
